@@ -68,7 +68,7 @@
 
 
 
-  <meta name="keywords" content="Hexo, NexT" />
+  <meta name="keywords" content="Algorithm," />
 
 
 
@@ -79,16 +79,18 @@
 
 
 
-<meta name="description" content="Unity &amp; ACM 的咸鱼一枚">
-<meta property="og:type" content="website">
-<meta property="og:title" content="神秘的幻想乡">
-<meta property="og:url" content="http://yoursite.com/index.html">
+<meta name="description" content="1.最短路径算法介绍问题解释：从图中的某个顶点出发到达另外一个顶点的所经过的边的权重和最小的一条路径，称为最短路径 解决问题的算法：  Floyd算法 Dijkstra算法 SPFA算法  2.Floyd算法弗洛伊德算法是解决任意两点间的最短路径的一种算法，可以正确处理有向图或有向图或负权的最短路径问题，同时也被用于计算有向图的传递闭包。  假设图中顶点个数为N，则需要对二维数组a进行N次更新。更">
+<meta name="keywords" content="Algorithm">
+<meta property="og:type" content="article">
+<meta property="og:title" content="最短路径问题">
+<meta property="og:url" content="http://yoursite.com/2018/01/15/最短路径问题/index.html">
 <meta property="og:site_name" content="神秘的幻想乡">
-<meta property="og:description" content="Unity &amp; ACM 的咸鱼一枚">
+<meta property="og:description" content="1.最短路径算法介绍问题解释：从图中的某个顶点出发到达另外一个顶点的所经过的边的权重和最小的一条路径，称为最短路径 解决问题的算法：  Floyd算法 Dijkstra算法 SPFA算法  2.Floyd算法弗洛伊德算法是解决任意两点间的最短路径的一种算法，可以正确处理有向图或有向图或负权的最短路径问题，同时也被用于计算有向图的传递闭包。  假设图中顶点个数为N，则需要对二维数组a进行N次更新。更">
 <meta property="og:locale" content="zh-Hans">
+<meta property="og:updated_time" content="2018-01-15T05:51:15.519Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="神秘的幻想乡">
-<meta name="twitter:description" content="Unity &amp; ACM 的咸鱼一枚">
+<meta name="twitter:title" content="最短路径问题">
+<meta name="twitter:description" content="1.最短路径算法介绍问题解释：从图中的某个顶点出发到达另外一个顶点的所经过的边的权重和最小的一条路径，称为最短路径 解决问题的算法：  Floyd算法 Dijkstra算法 SPFA算法  2.Floyd算法弗洛伊德算法是解决任意两点间的最短路径的一种算法，可以正确处理有向图或有向图或负权的最短路径问题，同时也被用于计算有向图的传递闭包。  假设图中顶点个数为N，则需要对二维数组a进行N次更新。更">
 
 
 
@@ -118,13 +120,13 @@
 
 
 
-  <link rel="canonical" href="http://yoursite.com/"/>
+  <link rel="canonical" href="http://yoursite.com/2018/01/15/最短路径问题/"/>
 
 
 
 
 
-  <title>神秘的幻想乡</title>
+  <title>最短路径问题 | 神秘的幻想乡</title>
   
 
 
@@ -143,8 +145,7 @@
     
   
 
-  <div class="container sidebar-position-left 
-  page-home">
+  <div class="container sidebar-position-left page-post-detail">
     <div class="headband"></div>
 
     <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
@@ -277,9 +278,9 @@
         <div class="content-wrap">
           <div id="content" class="content">
             
-  <section id="posts" class="posts-expand">
+
+  <div id="posts" class="posts-expand">
     
-      
 
   
 
@@ -309,9 +310,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2018/01/15/最短路径问题/" itemprop="url">最短路径问题</a></h1>
+          <h1 class="post-title" itemprop="name headline">最短路径问题</h1>
         
 
         <div class="post-meta">
@@ -361,9 +360,7 @@
       
 
       
-        
-          
-            <h1 id="1-最短路径算法介绍"><a href="#1-最短路径算法介绍" class="headerlink" title="1.最短路径算法介绍"></a>1.最短路径算法介绍</h1><p>问题解释：<br>从图中的某个顶点出发到达另外一个顶点的所经过的边的权重和最小的一条路径，称为最短路径</p>
+        <h1 id="1-最短路径算法介绍"><a href="#1-最短路径算法介绍" class="headerlink" title="1.最短路径算法介绍"></a>1.最短路径算法介绍</h1><p>问题解释：<br>从图中的某个顶点出发到达另外一个顶点的所经过的边的权重和最小的一条路径，称为最短路径</p>
 <p>解决问题的算法：</p>
 <ul>
 <li>Floyd算法</li>
@@ -378,8 +375,6 @@
 </li>
 </ul>
 <h1 id="3-Dijkstra算法"><a href="#3-Dijkstra算法" class="headerlink" title="3.Dijkstra算法"></a>3.Dijkstra算法</h1>
-          
-        
       
     </div>
     
@@ -389,19 +384,54 @@
     
 
     
+      <div>
+        <div style="padding: 10px 0; margin: 20px auto; width: 90%; text-align: center;">
+  <div>Donate comment here</div>
+  <button id="rewardButton" disable="enable" onclick="var qr = document.getElementById('QR'); if (qr.style.display === 'none') {qr.style.display='block';} else {qr.style.display='none'}">
+    <span>打赏</span>
+  </button>
+  <div id="QR" style="display: none;">
+
+    
+      <div id="wechat" style="display: inline-block">
+        <img id="wechat_qr" src="/images/wechatpay.jpg" alt="Flandrepiu 微信支付"/>
+        <p>微信支付</p>
+      </div>
+    
+
+    
+      <div id="alipay" style="display: inline-block">
+        <img id="alipay_qr" src="/images/alipayerweima.jpg" alt="Flandrepiu 支付宝"/>
+        <p>支付宝</p>
+      </div>
+    
+
+    
+
+  </div>
+</div>
+
+      </div>
+    
 
     
 
     <footer class="post-footer">
       
+        <div class="post-tags">
+          
+            <a href="/tags/Algorithm/" rel="tag"># Algorithm</a>
+          
+        </div>
+      
+
+      
+      
+      
 
       
 
       
-
-      
-      
-        <div class="post-eof"></div>
       
     </footer>
   </div>
@@ -411,10 +441,11 @@
   </article>
 
 
-    
-  </section>
 
-  
+    <div class="post-spread">
+      
+    </div>
+  </div>
 
 
           </div>
@@ -422,6 +453,10 @@
 
 
           
+
+  
+
+
 
         </div>
         
@@ -442,8 +477,17 @@
       
 
       
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            站点概览
+          </li>
+        </ul>
+      
 
-      <section class="site-overview-wrap sidebar-panel sidebar-panel-active">
+      <section class="site-overview-wrap sidebar-panel">
         <div class="site-overview">
           <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
             
@@ -498,6 +542,22 @@
         </div>
       </section>
 
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#1-最短路径算法介绍"><span class="nav-number">1.</span> <span class="nav-text">1.最短路径算法介绍</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#2-Floyd算法"><span class="nav-number">2.</span> <span class="nav-text">2.Floyd算法</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#3-Dijkstra算法"><span class="nav-number">3.</span> <span class="nav-text">3.Dijkstra算法</span></a></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
       
 
       
@@ -638,6 +698,10 @@
   
 
   
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.4"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.1.4"></script>
+
+
 
   
 
